@@ -27,13 +27,19 @@ ButtonReader.h :
   state of the button. Also has accessors.
 
 CameraController.cpp :
-  
+  CameraController.cpp has all methods dealing with the analyzation of images from the camera. It also has an update function
+  and can get and request a camera image.
 
-CameraController.h
+CameraController.h :
+  CameraController.h contains the variables relating to the camera images, including booleans to match images, check if
+  an image is a horizontal or vertical target, and integers for color thresholds, heights, widths, and areas of images.
 
-ControlBoard.cpp
+ControlBoard.cpp :
+  ControlBoard.cpp reads all the values from the joysticks and buttons. It containsprovides the proper values that should go
+  into the motors.
 
-ControlBoard.h
+ControlBoard.h :
+  ControlBoard.h declares the variables and methods used in ControlBoard.cpp, which are all the ButtonReaders and booleans.
 
 Debugging.cpp :
   Debuggging.cpp takes care of us not wanting to print everything during matches or when not neccessary and gets a value from the ini file to determine if we want to print out debugging comments.
