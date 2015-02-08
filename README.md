@@ -30,19 +30,26 @@ DriveController.cpp
 
 DriveController.h
 
-DSLCDPrinter.cpp
+DSLCDPrinter.cpp :
+  DSLCDPrinter.cpp takes a variable that wants to be printed to the Driver Station lower right corner and prints it there and deals with space limits and updating.
 
-DSLCDPrinter.h
+DSLCDPrinter.h :
+  DSLCDPrinter.h takes a variable that wants to be printed to the Driver Station lower right corner and prints it there and deals with space limits and updating.
 
-ini.cpp
+ini.cpp :
+  ini.cpp is the definitions for the methods in ini.h that take an ini text file and read it and give our code appropriate values.
 
-ini.h
+ini.h :
+  ini.h is code for being able to read an ini text file that we use for on-field software configuration.
 
-LinearVictor.cpp
+LinearVictor.cpp :
+    This is code for creating accurate victors so that the inputs we give the victors will represent what the motors are doing. We do not use this in the 2014 code because we use talons.
+    
+LinearVictor.h :
+  This is code for creating accurate victors so that the inputs we give the victors will represent what the motors are doing. We do not use this in the 2014 code because we use talons.
 
-LinearVictor.h
-
-MainProgram.cpp
+MainProgram.cpp :
+  MainProgram.cpp is where all of the controllers are created. It inherits from Iterative Robot in WPILib. 
 
 minGlue.h :
   This connects the ini file to the rest of the program.
