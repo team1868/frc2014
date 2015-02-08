@@ -2,19 +2,32 @@ This is the 2014 code for Space Cookies FRC Team 1868.
 
 Contents:
 
-AutoCommand.cpp
+AutoCommand.cpp :
+  AutoCommand.cpp contains the methods for autonomous and includes DriveCommand, PivotCommand, IntakeRollers, and
+  IntakePositionCommand. It also has a saturate method to ensure that all motor values are less than or equal to
+  the maximum value.
 
-AutoCommand.h
+AutoCommand.h :
+  AutoCommand.h declares the methods and variables used to drive, pivot, shoot, intake, and shoot into a hot goal.
 
-AutonomousController.cpp
+AutonomousController.cpp :
+  AutonomousController.cpp contains the list of commands to do during autonomous, in the form of a queue. It also
+  has methods to start the autonomous functions, update, reset, and refresh the ini.
 
-AutonomousController.h
+AutonomousController.h :
+  AutonomousController.h declares the methods and variables used in AutonomousController.cpp for the autonomous
+  sequence.
 
-ButtonReader.cpp
+ButtonReader.cpp :
+  ButtonReader.cpp contains all methods relating to buttons, such as what to do when a button has been pressed
+  or released, or how to access the current state of a button. Contains ToggleButtonReader and SwitchReader.
 
-ButtonReader.h
+ButtonReader.h :
+  ButtonReader.h declares the variables and methods used for buttons, which mainly are booleans relating to the
+  state of the button. Also has accessors.
 
-CameraController.cpp
+CameraController.cpp :
+  
 
 CameraController.h
 
