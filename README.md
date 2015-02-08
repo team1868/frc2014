@@ -35,13 +35,17 @@ ControlBoard.cpp
 
 ControlBoard.h
 
-Debugging.cpp
+Debugging.cpp :
+  Debuggging.cpp takes care of us not wanting to print everything during matches or when not neccessary and gets a value from the ini file to determine if we want to print out debugging comments.
 
-Debugging.h
+Debugging.h :
+  Debugging.h has our DO_PERIODIC method to prevent printing from to the WTXConsole in an unreadable method as well as different variables to be used in future #if 's.
 
-DriveController.cpp
+DriveController.cpp :
+  DriveController.cpp defines the methods in drive controller, including update which takes joystick values from the control board and sets the motors to the appropriate values.
 
-DriveController.h
+DriveController.h :
+  DriveController.h declares the methods in drive controller which connects the control board that has joysticks and buttons to the robot object so we can drive the base of the robot. This includes a driving state machine.
 
 DSLCDPrinter.cpp :
   DSLCDPrinter.cpp takes a variable that wants to be printed to the Driver Station lower right corner and prints it there and deals with space limits and updating.
